@@ -1,0 +1,14 @@
+[
+  {
+    "cloudName": "AzureCloud",
+    "id": "6571598d-2cc3-46fb-abe6-938563b6b8a3",
+    "isDefault": true,
+    "name": "Gerald Bachlmayr",
+    "state": "Enabled",
+    "tenantId": "0aa2ecc4-7253-40a6-8b01-0e9967db87b3",
+    "user": {
+      "name": "gerald.bachlmayr@contino.io",
+      "type": "user"
+    }
+  }
+]
