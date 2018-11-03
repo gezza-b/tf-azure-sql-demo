@@ -1,2 +1,6 @@
-terraform.tfstate
-terraform.tfstate.backup
+# .tfvars files
+*.tfvars
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
