@@ -1,5 +1,5 @@
 CREATE TABLE transactions (
     id int,
-    id txTime timestamp,
+    txTime timestamp,
     amount decimal
 );
