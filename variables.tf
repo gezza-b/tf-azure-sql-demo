@@ -3,6 +3,15 @@ variable "resource_group_name" {
   default     = "myapp-rg"
 }
 
+variable "rg_tags" {
+  type        = "map"
+  description = "A map of the tags to use on the resources that are deployed with this module."
+
+  default = {
+    environment = "DEV"
+  }
+}
+
 variable "location" {
   description = "The location/region where the database and server are created. Changing this forces a new resource to be created."
   default = "australiaeast"
@@ -38,8 +47,9 @@ variable "sql_admin_username" {
   default = "dbadmin"
 }
 
-variable "sql_password" {
+variable "dbadmin_password" {
   description = "The administrator password of the SQL Server."
+  default = "Secure@123"
 }
 
 variable "start_ip_address" {
@@ -52,12 +62,12 @@ variable "end_ip_address" {
   default     = "0.0.0.0"
 }
 
-variable "tags" {
+variable "db_tags" {
   description = "The tags to associate with your network and subnets."
   type        = "map"
 
   default = {
-    tag1 = ""
-    tag2 = ""
+    environment = "env"
+    costcentre = "123"
   }
 }
